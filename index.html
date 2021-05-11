@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="zoom">
+    <button class="zoom-btn" onclick="this.nextElementSibling.stepDown()">&#45;</button>
+    <input type="number" min="10" max="130" step="10" value="10" readonly>
+    <button class="zoom-btn" onclick="this.previousElementSibling.stepUp()">&#43;</button>
+</div>
+    <div class="container">
+        <ul>
+            <li class="ui-widget-content">
+                <label>
+                    <span>Root</span>
+                    <div class="operations">
+                        <i class="fa fa-plus createInput"></i>
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/c37a2e96a6.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
